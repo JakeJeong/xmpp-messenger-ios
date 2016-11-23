@@ -27,9 +27,9 @@ s.requires_arc = true
 s.dependency 'FMDB'
 s.dependency 'JSQMessagesViewController'
 s.dependency 'JSQSystemSoundPlayer', '~> 2.0'
-s.dependency 'XMPPFramework'
+# s.dependency 'XMPPFramework'
 
-s.ios.frameworks = 'Foundation', 'CoreData', 'UIKit', 'CFNetwork', 'Security', 'XMPPFramework'
+s.ios.frameworks = 'Foundation', 'CoreData', 'UIKit', 'CFNetwork', 'Security'#, 'XMPPFramework'
 s.source_files = ['Pod/Classes/**/*.{swift}']
 s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2 $(PODS_ROOT)/XMPPFramework/module', 'ENABLE_BITCODE' => 'NO'}
 
